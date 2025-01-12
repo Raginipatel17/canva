@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>invitation decorator</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=text_fields" />
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                
+              </div>
+              <div class="swiper-slide">
+               
+              </div>
+              <div class="swiper-slide">
+             
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        <div class="fun">
+          <h3>Functionality</h3>
+          <div id="function">
+            <button id="addtext">
+                <span class="material-symbols-outlined">
+                    text_fields
+                </span>
+                <br>
+                Add text
+            </button>
+            <div style="display: flex;">
+            <select id="fonts">
+                <option value="Arial, sans-serif" style="font-family:Arial, sans-serif ;">Arial</option>
+                <option value="Times New Roman, serif" style="font-family: Times New Roman, serif;">Times New Roman</option>
+                <option value="Courier New, monospace" style="font-family: Courier New, monospace;">Courier New</option>
+                <option value="Verdana, sans-serif" style="font-family: Verdana, sans-serif;">Verdana</option>
+                <option value="Comic Sans MS, cursive"style="font-family: Comic Sans MS, cursive;">Comic Sans</option>
+                <option value="'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Franklin Gothic Medium</option>
+                <option value="Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Impact</option>
+                <option value="Georgia, 'Times New Roman', Times, serif" style="font-family: Georgia, 'Times New Roman', Times, serif;">Georgia</option>
+            </select>
+            <div id="size">
+            <label for="fontsize">font-size</label>
+            <select id="fontsize">
+                <option value="1vh">1</option>
+                <option value="2vh">2</option>
+                <option value="3vh">3</option>
+                <option value="4vh">4</option>
+                <option value="5vh">5</option>
+                <option value="6vh">6</option>
+                <option value="7vh">7</option>
+                <option value="8vh">8</option>
+                <option value="9vh">9</option>
+                <option value="10vh">10</option>
+                <option value="11vh">11</option>
+                <option value="12vh">12</option>
+                <option value="13vh">13</option>
+                <option value="14vh">14</option>
+                <option value="15vh">15</option>
+                <option value="16vh">16</option>
+                <option value="17vh">17</option>
+                <option value="18vh">18</option>
+            </select>
+            </div>
+            </div>
+            <div id="color">
+            <label for="colorpicker">Choose the color:</label>
+            <input type="color" name="colorpicker" id="colorpicker" placeholder="select color">
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        slidesPerView: 1,  // Show 3 slides at a time
+        loop: true,
+              
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+        // And if we need scrollbar
+        // scrollbar: {
+        //   el: '.swiper-scrollbar',
+        // },
+      });
+      
+      </script>
+</body>
+</html>

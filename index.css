@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    height: fit-content;
+}
+.container{
+    display: flex;
+    
+}
+.fun{
+    background-color: rgb(255, 255, 255);
+    width:50%;
+    height:100vh;
+    text-align: center;
+
+}
+#function{
+    margin:200px;
+    
+}
+#addtext{
+    color:rgb(0, 0, 0);
+    border:2px solid rgb(226, 224, 224);
+    background-color: rgb(208, 205, 205);
+    padding:3px;
+    width:300px;
+    cursor: pointer;
+    top: 50px;
+    left: 50px;
+    display: block;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+#fonts{
+    width: 150px;
+    display: block;
+    font-size: 15px;
+    padding:3px;
+    border:2px solid rgb(224, 222, 222);
+    background-color: rgb(208, 205, 205);
+}
+#size{
+    width: 150px;
+    display: block;
+    font-size: 15px;
+    padding:3px;
+    border:2px solid rgb(224, 222, 222);
+    background-color: rgb(208, 205, 205);
+}
+#color{
+    width: 300px;
+    display: block;
+    font-size: 15px;
+    padding:3px;
+    border:2px solid rgb(224, 222, 222);
+    background-color: rgb(208, 205, 205);
+}
+#fontsize{
+    border:2px solid rgb(224, 222, 222);
+    background-color: rgb(208, 205, 205);
+}
+.text #resize,
+.text #delete{
+    position: absolute;
+    display: none;
+}
+
+.text{
+    width:10vw;
+    padding:3px;
+    border: none !important;
+    position:absolute;
+    background-color: transparent;
+    margin:auto;
+    text-align: center;
+    align-items: center;
+    z-index: 3;
+   
+}
+
+
+#resize{
+    position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 6px;
+      height: 6px;
+      background-color: #000;
+      cursor: se-resize;
+}
+
+#delete{
+    color:#ffffff;
+    background-color: red;
+    border-radius: 100px;
+    position:absolute;
+    width:16px;
+    height:16px;
+    text-align: center;
+    top:-10px;
+    right:-6px;
+    font-size: 12px;
+}
+.swiper{
+    height:100vh;
+    width:50%;
+    /* background-color: #ed0505;   */
+        .swiper-slide{
+            height:70vh;
+            margin-top: auto;
+            margin-bottom: auto;
+            background-color: #d39892;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }  
+}
+.swiper-slide {
+    width: 600px !important;
+    margin:80px;
+  }
+
